@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000; /* Ensure navigation is above other content */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Add spacing between items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+.left{
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 15rem;
+}
+.right{
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 15rem;
+}
+.centerleft{
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 15rem;
+}
+.centerright{
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 15rem;
+}
+.profile img{
+    margin-top: 3rem;
+    width: 25rem;
+    border-radius: 2rem;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.about-content{
+    margin-top: 4rem;
+    margin-right: 15rem;
+    padding: 2rem;
+    background-color: black;
+    border-radius: 2rem;
+    height: 10rem;
+    max-width: 30rem;
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262626;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px; 
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.project img {
+    max-width: 20rem;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer{
+    align-self: center;
+}
