@@ -3,7 +3,9 @@ body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
+h1{
+    font-weight: 500;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,6 +14,57 @@ body {
     display: flex;
     flex-direction: column;
 }
+.about-description {
+    max-width: calc(35% - 50px); 
+    padding-right: 20px; 
+    margin-bottom: 20px;
+    margin-top: 80px; 
+}
+
+.about-description p.smaller-font {
+    font-size: 20px;
+    margin-bottom: 10px; 
+}
+
+.about-description h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin-right: 50px; 
+    padding: 12px 35px; 
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.about-btn {
+    background-color: transparent;
+    color: var(--white); 
+    border: 1px solid white; 
+}
+
+
+.profile img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center; 
+    margin-right: 50px; 
+}
+
+#about {
+    padding-top: 100px; 
+}
+
 
 section {
     padding: 20px;
@@ -30,21 +83,6 @@ section h2 {
     align-self: flex-end;
     margin-left: auto;
     margin-right: 15rem;
-}
-.centerleft{
-    align-self: flex-end;
-    margin-left: auto;
-    margin-right: 15rem;
-}
-.centerright{
-    align-self: flex-start;
-    margin-right: auto;
-    margin-left: 15rem;
-}
-.profile img{
-    margin-top: 3rem;
-    width: 25rem;
-    border-radius: 2rem;
 }
 .about {
     display: flex;
