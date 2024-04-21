@@ -39,7 +39,7 @@ body {
     display: inline-block;
     margin-right: 50px; 
     padding: 12px 35px; 
-    border-radius: 5px;
+    border-radius: 15px;
     text-decoration: none;
 }
 
@@ -80,7 +80,6 @@ section h2 {
     margin-left: 15rem;
 }
 .right{
-    align-self: flex-end;
     margin-left: auto;
     margin-right: 15rem;
 }
@@ -119,6 +118,89 @@ section h2 {
     max-width: 20rem;
     height: auto;
     margin-bottom: 10px;
+}
+.hexagon-container {
+    display: flex;
+    align-items: center;
+}
+
+.projects {
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.hexagon {
+    width: 400px;
+    height: 800px;
+    background: linear-gradient(to bottom, var(--purple), var(--darker-purple));
+    position: relative;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 115.5px solid var(--purple);
+}
+
+
+.hexagon img {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 12%;
+    top: 0%;
+}
+
+.project-description {
+    max-width: 40%;
+    text-align: left;
+    margin-left: 50px; /* Adjust the margin as needed */
+}
+
+
+.project-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-description .underline {
+    width: 220px;
+    height: 3px;
+    background-color: var(--purple);
+    margin: 0 auto 20px; /* Center the underline */
+}
+
+.project-description p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.application-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--white);
+    padding: 17px 35px; 
+    border-radius: 15px;
+    text-decoration: none;
+    margin-left: 0;
 }
 .footer{
     align-self: center;
