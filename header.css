@@ -4,6 +4,7 @@ header {
     position: fixed;
     width: 100%;
     font-family: 'Montserrat Alternates';
+    z-index: 100;
 }
 
 .header-container {
