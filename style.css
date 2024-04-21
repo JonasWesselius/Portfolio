@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -7,43 +7,10 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #333;
+    background-color: var(--darkest-gray);
     color: #fff;
     display: flex;
     flex-direction: column;
-}
-
-header {
-    position: fixed;
-    padding: 20px;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 1000; /* Ensure navigation is above other content */
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: right;
-    margin-right: 2rem;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px; /* Add spacing between items */
-}
-
-nav ul li:first-child {
-    margin-left: 0; /* Remove margin from the first item */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 section {

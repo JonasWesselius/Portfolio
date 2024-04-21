@@ -1,0 +1,76 @@
+header {
+    background-color: var(--dark-gray);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    font-family: 'Montserrat Alternates';
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; 
+    margin-right: 20px; 
+    margin-left: 250px; 
+}
+
+.name {
+    font-size: 25px;
+    font-family: 'Arial';
+    font-weight: 500;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; 
+    position: relative; /* Make the position relative to allow absolute positioning of pseudo-element */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li.current-page a::after {
+    content: ""; /* Create the pseudo-element */
+    position: absolute;
+    bottom: -5px; 
+    left: 50%; /* Position the pseudo-element at the center */
+    transform: translateX(-50%); /* Center the pseudo-element horizontally */
+    width: 110%;
+    height: 2px; 
+    background-color: var(--purple); 
+}
+
+
+.portfolio-btn {
+    font-weight: 550;
+    color: var(--white);
+    padding: 12px 35px; 
+    margin-right: 250px; 
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(to top right, var(--purple), var(--darker-purple));
+    border: none;
+}
+
+.portfolio-btn:hover {
+    background-color: var(--hover-purple);
+}
