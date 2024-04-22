@@ -112,7 +112,7 @@ section h2 {
 
 .hexagon {
     width: 400px;
-    height: 800px;
+    height: 30vw;
     background: linear-gradient(to bottom, var(--purple), var(--darker-purple));
     position: relative;
     transform: rotate(90deg);
