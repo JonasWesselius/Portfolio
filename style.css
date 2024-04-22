@@ -112,7 +112,7 @@ section h2 {
 
 .hexagon {
     width: 400px;
-    height: 30vw;
+    height: 40vw;
     background: linear-gradient(to bottom, var(--purple), var(--darker-purple));
     position: relative;
     transform: rotate(90deg);
@@ -149,7 +149,7 @@ section h2 {
 } */
 
 .project-description {
-    max-width: 40%;
+    max-width: 33%;
     text-align: left;
     margin-left: 50px; 
 }
