@@ -18,7 +18,10 @@ header {
     display: flex;
     align-items: center;
 }
-
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
 .logo {
     height: 40px; 
     margin-right: 20px; 
@@ -29,6 +32,8 @@ header {
     font-size: 25px;
     font-family: 'Arial';
     font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
 }
 
 nav ul {

@@ -1,9 +1,12 @@
 /* colors.css */
 :root {
+    --light-purple:#8C33D1;
     --purple: #6F00C6;
     --black: #252525;
     --dark-gray: #292929;
     --dark-purple: #360060;
     --darker-purple: #2C004F;
     --darkest-gray: #171717;
+    --section-gray: #1E1E1E;
+    --white: #FFFFFF;
 }

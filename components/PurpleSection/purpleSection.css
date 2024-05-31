@@ -1,0 +1,122 @@
+.projects {
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    overflow: hidden; 
+}
+
+.project-description {
+    max-width: 33%;
+    text-align: left;
+}
+.project-description-left {
+    max-width: 33%;
+    text-align: left;
+}
+
+
+.project-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-description .underline {
+    width: 220px;
+    height: 3px;
+    background-color: var(--purple);
+    margin: 0 auto 20px;
+}
+
+.project-description p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.hexagon-container {
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+}
+.hexagon {
+    width: 400px;
+    height: 40vw;
+    background: linear-gradient(to bottom, var(--purple), var(--darker-purple));
+    position: relative;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 115.5px solid var(--purple);
+}
+
+.hexagon img {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(270deg); 
+    position: absolute;
+    left: 12%;
+    top: 0%;
+    /* transition: transform 0.3s ease-in-out;  */
+}
+
+.projects.inverted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inverted-hexagon {
+    width: 400px;
+    height: 30vw;
+    background: linear-gradient(to top, var(--purple), var(--darker-purple));
+    position: relative;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inverted-hexagon:before {
+    border-bottom: none;
+    border-top: 115.5px solid var(--purple);
+    top: 100%;
+    bottom: auto;
+}
+
+.inverted-hexagon img {
+    transform: rotate(90deg);
+    left: auto;
+    right: 12%;
+}
+
+.application-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--white);
+    padding: 17px 35px; 
+    border-radius: 15px;
+    text-decoration: none;
+    margin-left: 0;
+    transition: background-color 0.3s; 
+}
+
+.application-btn:hover {
+    background-color: var(--purple); 
+
+}

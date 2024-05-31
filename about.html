@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="colors.css">
-    <link rel="stylesheet" href="components/footer/footer.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="components/PurpleSection/purpleSection.css">
-    <link rel="stylesheet" href="components/about/aboutSection.css">
-    <link rel="stylesheet" href="components/hexagrid/hexagrid.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,7 +25,7 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="about.html">About</a></li>
+                    <li class="current-page"><a href="about.html">About</a></li>
                     <li><a href="LearningOutcomes.html">Learning Outcomes</a></li>
                     <li><a href="portfolio.html" class="portfolio-btn">Portfolio</a></li>
                 </ul>
@@ -34,17 +33,18 @@
         </div>
     </header>
     
-    <section id="about" class="about">
-        <div class="about-description left">
-            <p class="smaller-font">Hey, I'm Jonas Wesselius.</p>
-            <h1>A Front End Developer Student, I enjoy designing and creating websites and applications.</h1>
-            <div class="buttons">
-                <a href="portfolio.html" class="portfolio-btn">Portfolio</a>
-                <a href="about.html" class="about-btn">About Me</a>
+
+    <section id="about-me" class="about-me">
+        <div class="about-me-container">
+            <div class="about-me-left">
+                <img src="images/aboutMePic.png" alt="Jonas Wesselius" class="about-me-picture">
             </div>
-        </div>
-        <div class="profile right">
-            <img src="images/ProfileImage.png" alt="Profile Image">
+            <div class="about-me-right">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+                <p>My most recent major project as a Front End Developer was creating an application for our product SmartHive and SmartHive Elite, a product designed to improve your environment focusing on statistics like lightlevel, humidity and air quality. Elite being a more premium version of a basic SmartHive. 
+                </p>            
+            </div>
         </div>
     </section>
 
@@ -52,63 +52,31 @@
         <div class="hexagon-container">
             <div class="hexagon">
                 <div class="hexagon-inner">
-                    <img src="images/SmartHiveLogoFinal 1.svg" alt="SmartHive Logo">
+                
                 </div>
             </div>
         </div>
         <div class="project-description right">
-            <h2>Project SmartHive</h2>
+            <h2>Hobby’s</h2>
             <div class="underline"></div>
             <p>My most recent major project as a Front End Developer was creating an application for our product SmartHive and SmartHive Elite, a product designed to improve your environment focusing on statistics like light level, humidity, and air quality. Elite being a more premium version of a basic SmartHive.</p>
-            <a href="#" class="application-btn">Go to App</a>
         </div>
     </section>
 
-    <section id="learning-outcomes" class="learning-outcomes">
-        <div class="title">
-            <h2>Learning Outcomes</h2>
+    <section id="projects" class="projects inverted">
+        <div class="project-description left">
+            <h2>Education</h2>
+            <div class="underline"></div>
+            <p>My most recent major project as a Front End Developer was creating an application for our product SmartHive and SmartHive Elite, a product designed to improve your environment focusing on statistics like light level, humidity, and air quality. Elite being a more premium version of a basic SmartHive.</p>
         </div>
-        <div class="hexagon-grid">
-            <a href="learningOutcomes/interactiveMediaProducts/mediaProducts.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 1">
-                    <div class="hover-text">Interactive Media Products</div>
+        <div class="hexagon-container">
+            <div class="hexagon inverted-hexagon">
+                <div class="hexagon-inner">
                 </div>
-            </a>
-            <a href="learningOutcomes/frontEndDevelopment/frontEnd.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 2">
-                    <div class="hover-text">Front-End Development</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/iterativeDesign/iterative.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 3">
-                    <div class="hover-text">Iterative Design</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/research/research.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 4">
-                    <div class="hover-text">Research</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/communication/communication.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 5">
-                    <div class="hover-text">Communication</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/professionalIdentity/identity.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 6">
-                    <div class="hover-text">Professional Identity</div>
-                </div>
-            </a>
+            </div>
         </div>
-        <img src="images/Logo Zwart.svg" alt="watermark" class="watermark">
     </section>
-    
+
     <section id="contact" class="footer">
         <div class="logoFooter">
             <img src="images/LogoWhite.svg" alt="Logo">
@@ -130,6 +98,5 @@
             <div class="icon"><img src="images/DiscordIcon.svg" alt="Discord"></div>
         </div>
     </section>
-    
 </body>
 </html>
