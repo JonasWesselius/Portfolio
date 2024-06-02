@@ -10,7 +10,7 @@
 .logoFooter img {
     width: 100px;
     height: auto;
-    margin-left: 300%;
+    margin-left: 20vw;
 }
 
 .quick-links {
@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(4, auto); 
     gap: 5px;
-    margin-left: 19%;
+    margin-left: 9vw;
 }
 
 .quick-links a {
@@ -49,7 +49,7 @@
 .social-icons {
     display: flex;
     align-items: center;
-    margin-right: 12.5%;
+    margin-right: 20vw;
 }
 
 .social-icons img {

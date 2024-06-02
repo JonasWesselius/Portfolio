@@ -8,9 +8,10 @@
 }
 .about-description {
     max-width: calc(35% - 50px); 
-    padding-right: 20px; 
+    padding-right: 10px; 
     margin-bottom: 20px;
-    margin-top: 80px; 
+    margin-top: 5vw; 
+    margin-left: 20vw;
 }
 .about-description p.smaller-font {
     font-size: 20px;
@@ -18,7 +19,7 @@
 }
 
 .about-description h1 {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 

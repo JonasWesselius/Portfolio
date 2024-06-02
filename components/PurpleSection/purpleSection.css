@@ -10,6 +10,7 @@
 .project-description {
     max-width: 33%;
     text-align: left;
+    margin-right: 18vw;
 }
 .project-description-left {
     max-width: 33%;
@@ -43,7 +44,7 @@
 }
 .hexagon {
     width: 400px;
-    height: 40vw;
+    height: 50vw;
     background: linear-gradient(to bottom, var(--purple), var(--darker-purple));
     position: relative;
     transform: rotate(90deg);

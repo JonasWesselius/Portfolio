@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,6 +32,105 @@
             </nav>
         </div>
     </header>
-    
+    <div class="table">
+        <div class="title-section">
+            <h1>Table of Contents</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <input type="checkbox" name="radio-a" id="check1">
+                <label class="accordion-title" for="check1">Interactive Media Products</label>
+                <div class="accordion-content">
+                    <div><a href="#interactive-media-products-content-strategy">Content Strategy Rockcity</a></div>
+                    <div><a href="#interactive-media-products-brand-guide">Brand Guide Rockcity</a></div>
+                    <div><a href="#interactive-media-products-presentationRC">Presentation Rockcity</a></div>
+                    <div><a href="#interactive-media-products-presentationLT">Presentation Lighttown</a></div>
+                </div>            
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" name="radio-a" id="check2">
+                <label class="accordion-title" for="check2">Front-End Development Languages</label>
+                <div class="accordion-content">
+                    <p>Github version control</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" name="radio-a" id="check3">
+                <label class="accordion-title" for="check3">Iterative Design</label>
+                <div class="accordion-content">
+                    <p>Content Strategy Rockcity</p>
+                    <p>Brand Guide Rockcity</p>
+                    <p>Stylescape Rockcity</p>
+                    <p>Portfolio Wireframes</p>
+                    <p>Lighttown Speakers Wireframes</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" name="radio-a" id="check4">
+                <label class="accordion-title" for="check4">Research</label>
+                <div class="accordion-content">
+                    <p>Affinity Mapping Lighttown</p>
+                    <p>Affinity Mapping Class</p>
+                    <p>AI-Research Rockcity</p>
+                    <p>Competitor Analysis Rockcity</p>
+                    <p>Research for Content Strategy Rockcity</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" name="radio-a" id="check5">
+                <label class="accordion-title" for="check5">Communication</label>
+                <div class="accordion-content">
+                    <p>Interview Client Lighttown</p>
+                    <p>WhatsApp Client Lighttown</p>
+                    <p>Email Client Lighttown</p>
+                    <p>Visit Lighttown Speakers</p>
+                    <p>Feedpulses Teachers</p>
+                    <p>Peer-To-Peer Feedback</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" name="radio-a" id="check6">
+                <label class="accordion-title" for="check6">Professional Identity</label>
+                <div class="accordion-content">
+                    <p>Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contact" class="footer">
+        <div class="logoFooter">
+            <img src="images/LogoWhite.svg" alt="Logo">
+        </div>
+        <div class="quick-links">
+            <a href="#" class="heading">Navigation</a> 
+            <a href="#" class="heading">Projects</a>
+            <a href="#">About</a>
+            <a href="#">SmartHive</a> 
+            <a href="#">Contact</a> 
+            <a href="#">Eindhoven Rockcity</a>
+            <a href="#">Portfolio</a>
+            <a href="#">LightTown Speakers</a>
+        </div>
+        <div class="social-icons">
+            <div class="icon"><img src="images/EmailIcon.svg" alt="Email"></div>
+            <div class="icon"><img src="images/GithubIcon.svg" alt="Github"></div>
+            <div class="icon"><img src="images/LinkedInIcon.svg" alt="LinkedIn"></div>
+            <div class="icon"><img src="images/DiscordIcon.svg" alt="Discord"></div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.accordion-title').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* Define keyframes for fade-in and fade-out */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -33,7 +33,6 @@ body {
     }
 }
 
-/* Apply animations to the body */
 /* body.fade-in {
     animation: fadeIn 0.3s forwards;
 }
@@ -55,13 +54,13 @@ body.fade-out {
 }
 
 .profile img {
-    width: 120%; 
-    max-width: 500px; 
+    width: 100%; 
+    max-width: 450px; 
     height: auto;
     border-radius: 5px; 
     display: flex;
     align-items: center; 
-    margin-right: 2.5vw; 
+    margin-right: 5vw; 
     /* transition: transform 0.3s ease-in-out;  */
     
 }
@@ -87,7 +86,7 @@ body.fade-out {
 .title-section p {
     font-size: 20px;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 section {
@@ -100,7 +99,7 @@ section h2 {
 
 .left{
     margin-right: auto;
-    margin-left: 15rem;
+    margin-left: 18vw;
 }
 .right{
     margin-left: auto;
