@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonas Wesselius - Portfolio</title>
+    
+    <!-- Preload stylesheets -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="header.css" as="style">
+    <link rel="preload" href="colors.css" as="style">
+    <link rel="preload" href="components/footer/footer.css" as="style">
+    <link rel="preload" href="components/PurpleSection/purpleSection.css" as="style">
+    <link rel="preload" href="components/about/aboutSection.css" as="style">
+    <link rel="preload" href="components/hexagrid/hexagrid.css" as="style">
+    
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="images/LogoWhite.svg" as="image">
+    <link rel="preload" href="images/ProfileImage.png" as="image">
+    <link rel="preload" href="images/SmartHiveLogoFinal 1.svg" as="image">
+    <link rel="preload" href="images/Hex.svg" as="image">
+    <link rel="preload" href="images/Logo Zwart.svg" as="image">
+    <link rel="preload" href="images/EmailIcon.svg" as="image">
+    <link rel="preload" href="images/GithubIcon.svg" as="image">
+    <link rel="preload" href="images/LinkedInIcon.svg" as="image">
+    <link rel="preload" href="images/DiscordIcon.svg" as="image">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="colors.css">
@@ -11,11 +36,8 @@
     <link rel="stylesheet" href="components/PurpleSection/purpleSection.css">
     <link rel="stylesheet" href="components/about/aboutSection.css">
     <link rel="stylesheet" href="components/hexagrid/hexagrid.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fade-in">
     <header>
         <div class="header-container">
             <a href="index.html" class="logo-link">
@@ -68,43 +90,45 @@
         <div class="title">
             <h2>Learning Outcomes</h2>
         </div>
-        <div class="hexagon-grid">
-            <a href="learningOutcomes/interactiveMediaProducts/mediaProducts.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 1">
-                    <div class="hover-text">Interactive Media Products</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/frontEndDevelopment/frontEnd.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 2">
-                    <div class="hover-text">Front-End Development</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/iterativeDesign/iterative.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 3">
-                    <div class="hover-text">Iterative Design</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/research/research.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 4">
-                    <div class="hover-text">Research</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/communication/communication.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 5">
-                    <div class="hover-text">Communication</div>
-                </div>
-            </a>
-            <a href="learningOutcomes/professionalIdentity/identity.html">
-                <div class="hexagonLO">
-                    <img src="images/Hex.svg" alt="Learning Outcome 6">
-                    <div class="hover-text">Professional Identity</div>
-                </div>
-            </a>
+        <div class="hexagrid">
+            <div class="hexagon-grid">
+                <a href="learningOutcomes/interactiveMediaProducts/mediaProducts.html">
+                    <div class="hexagonLO">
+                        <img src="images/Hex.svg" alt="Learning Outcome 1">
+                        <div class="hover-text">Interactive Media Products</div>
+                    </div>
+                </a>
+                <a href="learningOutcomes/frontEndDevelopment/frontEnd.html">
+                    <div class="hexagonLO">
+                        <img src="images/Hex.svg" alt="Learning Outcome 2">
+                        <div class="hover-text">Front-End Development</div>
+                    </div>
+                </a>
+                <a href="learningOutcomes/iterativeDesign/iterative.html">
+                    <div class="hexagonLO">
+                        <img src="images/Hex.svg" alt="Learning Outcome 3">
+                        <div class="hover-text">Iterative Design</div>
+                    </div>
+                </a>
+                <a href="learningOutcomes/research/research.html">
+                    <div class="hexagonLO">
+                        <img src="images/Hex.svg" alt="Learning Outcome 4">
+                        <div class="hover-text">Research</div>
+                    </div>
+                </a>
+                <a href="learningOutcomes/communication/communication.html">
+                    <div class="hexagonLO">
+                        <img src="images/Hex.svg" alt="Learning Outcome 5">
+                        <div class="hover-text">Communication</div>
+                    </div>
+                </a>
+                <a href="learningOutcomes/professionalIdentity/identity.html">
+                    <div class="hexagonLO">
+                        <img src="images/Hex.svg" alt="Learning Outcome 6">
+                        <div class="hover-text">Professional Identity</div>
+                    </div>
+                </a>
+            </div>
         </div>
         <img src="images/Logo Zwart.svg" alt="watermark" class="watermark">
     </section>
@@ -131,5 +155,29 @@
         </div>
     </section>
     
+    <div id="loading" class="loading">Loading...</div>
+    
+    <script>
+        // Add event listeners to links for page transition
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                
+                document.body.classList.add('fade-out');
+                document.getElementById('loading').style.display = 'block'; // Show loading indicator
+                
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300); // Match the duration of the fadeOut animation
+            });
+        });
+
+        // Ensure fade-in class is added when the page loads
+        window.addEventListener('pageshow', function() {
+            document.body.classList.add('fade-in');
+            document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+        });
+    </script>
 </body>
 </html>
