@@ -26,8 +26,8 @@ body {
     margin-bottom: 10px;
 }
 
-.title-section .underline {
-    width: 20rem;
+.title-section .underlines {
+    width: 28rem;
     height: 3px;
     background-color: var(--purple);
     margin: 0 auto 20px;

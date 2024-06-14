@@ -1,5 +1,6 @@
 .carousel-container {
     text-align: center;
+    align-items: center;
     margin-top: 40px;
     padding: 20px;
     background-color: var(--dark-gray);
@@ -21,7 +22,12 @@
     overflow: hidden;
     border-radius: 8px;
 }
-
+.carousel-image-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    align-self: center;
+}
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -34,19 +40,21 @@
     align-items: center;
     min-width: 100%;
     box-sizing: border-box;
+    opacity: 1; /* Default opacity */
+    visibility: visible; /* Default visibility */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transitions */
 }
 
-.carousel-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px; /* Add margin between images and text */
+.carousel-item:not(.active) {
+    opacity: 0; /* Hide inactive carousel items */
+    visibility: hidden; /* Hide inactive carousel items */
+    pointer-events: none; /* Disable interactions on hidden items */
 }
 
 .carousel-item img {
-    max-width: 45%;
-    max-height: 50vh;
-    margin: 0 5px;
+    max-width: 45%; /* Adjust width of images */
+    max-height: 50vh; /* Adjust height of images */
+    margin: 0 5px; /* Adjust margin between images */
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -55,6 +63,7 @@
 .carousel-text {
     font-size: 18px;
     color: var(--white);
+    margin-top: 10px;
 }
 
 .carousel-control {

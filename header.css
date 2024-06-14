@@ -5,6 +5,8 @@ header {
     width: 100%;
     font-family: 'Montserrat Alternates';
     z-index: 100;
+    box-shadow: 0 3px 2px -2px var(--darkest-gray);
+
 }
 
 .header-container {

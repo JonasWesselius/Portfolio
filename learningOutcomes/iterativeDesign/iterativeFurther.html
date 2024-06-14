@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="../../header.css">
     <link rel="stylesheet" href="../../components/footer/footer.css">
     <link rel="stylesheet" href="../../components/carousel/carousel.css">
+    <link rel="stylesheet" href="../../components/subheader/subheader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Iterative Design in Detail</title>
+    <title>Iterative Design in detail</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon.ico">
 </head>
 <body>
     <header>
@@ -33,14 +35,24 @@
             </nav>
         </div>
     </header>
-    
+    <header class="section-navigation">
+        <nav>
+            <ul>
+                <li><a href="#wireframes-lighttown">Wireframes Lighttown</a></li>
+                <li><a href="#wireframes-portfolio">Wireframes Portfolio</a></li>
+                <li><a href="#wireframes-sprintx">Wireframes SprintX</a></li>
+                <li><a href="#stylescapes-rockcity">Stylescapes Rockcity</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="title-section">
         <img src="../../images/Logo Zwart.svg" alt="Watermark" class="watermarkLO">
-        <h1>Iterative Design</h1>
-        <div class="underline"></div>
-        <p>This is where you will find everything i’ve made for the learning outcome iterative design this semester, in greater detail.</p>
+        <h1>Iterative Design in detail</h1>
+        <div class="underlines"></div>
+        <p>This is where you will find everything I’ve made for the learning outcome iterative design this semester, in greater detail.</p>
     </div>
     <div class="sectionParent">
+        <div class="anchor" id="wireframes-lighttown"></div>
         <div class="section">
             <div class="further-detail">
                 <h2>Wireframes Lighttown</h2>
@@ -58,7 +70,7 @@
                 <p>9. Flat Colour Iteration: Some teachers suggested using flat colours instead of gradients, so I created an iteration with flat colours to evaluate this option.</p>
                 <p>10. Final Review and Testing: Presented all iterations to the teachers. The final feedback was to use different shades of the colour scheme to reduce vibrancy. By adding white with varying opacities, I achieved a range of blue shades, creating the final version. Additionally, a Partners page was added to fulfill the website's needs.</p>
             </div>
-            <div class="carousel-container">
+            <div class="carousel-container" id="carousel1">
                 <h3>Project Steps</h3>
                 <div class="carousel">
                     <div class="carousel-inner">
@@ -113,8 +125,8 @@
                             <p class="carousel-text">Step #10: Final Review and Testing</p>
                         </div>
                     </div>
-                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel1')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel1')">&#10095;</button>
                 </div>
             </div>
             
@@ -129,7 +141,178 @@
             <a href="https://www.figma.com/design/kjzxTmYHqaQdI0vMxq09q3/Wireframes-Lighttown-Speakers?node-id=111-88&t=O26DBeetCFWv2fyQ-1" class="further-btn" target="_blank">To Design</a>
         </div>
     </div>
-  
+    
+    
+    <div class="sectionParent">
+        <div class="anchor" id="wireframes-portfolio"></div>
+        <div class="section">
+            <div class="further-detail">
+                <h2>Wireframes Portfolio</h2>
+                <div class="underline"></div>
+                <p>Throughout the creation of my portfolio, I ended up with an iterative design approach, focusing on the visual appeal through multiple feedback cycles. Here’s how I navigated through the process: </p>
+                <p>1. Initial Conceptualization and Wireframing: 
+
+                     I started by outlining the basic structure and content flow of my portfolio. This initial stage laid the foundation for subsequent iterations. </p>
+                <p>2. First Iteration 
+                    
+                     I gathered feedback from teachers on the initial wireframe. Insights gathered here helped me understand i was on the right track but i needed to focus on my colours. </p>
+                <p>3. Second Iteration: 
+
+                    Incorporating feedback, I changed my colour palette and made a moodboard to fit the theme, i added a lot of content.  </p>
+                <p>4. Third Iteration: 
+
+                     Incorporating feedback, i changed my learning outcomes hexagons and adjusted the spacing arcoss the pages so its all matched. I was ready for development. </p>
+                <p>Key Learnings </p>
+                <p>- Iterative Approach: Using iterative design allowed me to continuously improve the portfolio, ensuring it met industry standards of usability and visual appeal. </p>
+                <p>- Planning: Getting constant feedback from teachers made me realise how import planning is, not putting the projects first all the times is a good lesson. </p>
+                <p>My portfolio creation journey shows the importance of iterative design and responsive feedback in achieving a professional and visually appealing outcome. </p>
+            </div>
+            <div class="carousel-container" id="carousel2">
+                <h3>Project Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Home screen.jpg" alt="Step 1" class="preview-image" data-full="../../images/Home screen.jpg">
+                            </div>
+                            <p class="carousel-text">Step #1: Initial Wireframe Creation</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Home screen Mock.jpg" alt="Step 2" class="preview-image" data-full="../../images/Home screen Mock.jpg">
+                                <img src="../../images/Learning Outcome 1.jpg" alt="Step 2" class="preview-image" data-full="../../images/Learning Outcome 1.jpg">
+                            </div>
+                            <p class="carousel-text">Step #2: First Mock-up</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Home screen 2.jpg" alt="Step 3" class="preview-image" data-full="../../images/Home screen 2.jpg">
+                                <img src="../../images/Learning Outcome 2.jpg" alt="Step 3" class="preview-image" data-full="../../images/Learning Outcome 2.jpg">
+                                <img src="../../images/About me 2.jpg" alt="Step 3" class="preview-image" data-full="../../images/About me 2.jpg">
+                                <img src="../../images/Portfolio.jpg" alt="Step 3" class="preview-image" data-full="../../images/Portfolio.jpg">
+                            </div>
+                            <p class="carousel-text">Step #3: Mock-up 2</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Home screen 3.jpg" alt="Step 3" class="preview-image" data-full="../../images/Home screen 3.jpg">
+                                <img src="../../images/Learning Outcome 3.jpg" alt="Step 3" class="preview-image" data-full="../../images/Learning Outcome 3.jpg">
+                                <img src="../../images/About me 3.jpg" alt="Step 3" class="preview-image" data-full="../../images/About me 3.jpg">
+                                <img src="../../images/Portfolio.jpg" alt="Step 3" class="preview-image" data-full="../../images/Portfolio.jpg">
+                            </div>
+                            <p class="carousel-text">Step #4: Final Mock-up</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel2')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel2')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
+            </div>
+            <a href="https://www.figma.com/design/XWhrbKD3WQX74dZqlK80zu/Portfolio?node-id=0-1&t=iHn5zbcpXuu7fTLc-1" class="further-btn" target="_blank">To Design</a>
+        </div>
+    </div>
+    <div class="sectionParent">
+        <div class="anchor" id="wireframes-sprintx"></div>
+        <div class="section">
+            <div class="further-detail">
+                <h2>Wireframes SprintX</h2>
+                <div class="underline"></div>
+                <p>I started my SprintX with the idea of creating an online archive to store your pokemon card collection. The goal was to develop an intuitive and visually appealing interface for users to browse their card collections, so that they know what cards are in their possession without having to look for all of them. </p>
+                <p>- Initial Wireframe: Explored design concepts inspired by the idea of a binder, aiming to recreate the feeling of exploring a physical card collection. </p>
+                <p>- Iteration 1: Iterated on feedback to pivot to a book metaphor, designing an interactive interface where users can flip through pages to view their card collection. </p>
+                <p>- Mock-up:  Developed a final mockup with a lighter theme, integrating vibrant colors and animations to simulate the experience of zooming into your collection for enhanced user interaction. </p>
+            </div>
+            <div class="carousel-container" id="carousel3">
+                <h3>Project Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Low Fid - Home.jpg" alt="Step 1" class="preview-image" data-full="../../images/Low Fid - Home.jpg">
+                                <img src="../../images/Low Fid - Collection.jpg" alt="Step 1" class="preview-image" data-full="../../images/Low Fid - Collection.jpg">
+                            </div>
+                            <p class="carousel-text">Step #1: Initial Wireframe Creation</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Collection Iteration 1.jpg" alt="Step 2" class="preview-image" data-full="../../images/Collection Iteration 1.jpg">
+                                <img src="../../images/Collection Iteration 1 Further.jpg" alt="Step 2" class="preview-image" data-full="../../images/Collection Iteration 1 Further.jpg">
+                            </div>
+                            <p class="carousel-text">Step #2: Collection Iteration</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Mockup - Home.jpg" alt="Step 3" class="preview-image" data-full="../../images/Mockup - Home.jpg">
+                                <img src="../../images/Mockup - Collection.jpg" alt="Step 3" class="preview-image" data-full="../../images/Mockup - Collection.jpg">
+                                <img src="../../images/Mockup - Collection Further.jpg" alt="Step 3" class="preview-image" data-full="../../images/Mockup - Collection Further.jpg">
+                            </div>
+                            <p class="carousel-text">Step #3: Mock-up</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel3')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel3')">&#10095;</button>
+                </div>
+            </div>
+            <div class="further-detail">
+                <p>Results:<br>
+                    - Successfully transitioned from ambitious map-inspired design to a practical book metaphor, achieving a more intuitive and visually appealing interface. </p>
+                <p>- Integrated vibrant colors and animations effectively, enhancing user engagement and enjoyment of browsing their Pokémon card collection. </p>
+                <p>- Prepared for future enhancements with plans to implement more sorting features, adding a user account, possible trading expanding the archive's functionality based on user feedback. </p>
+                <p>Next Steps:<br> 
+                - Implement additional features such as search and sorting functionalities. </p>
+                <p>- Expand the card database with more Pokémon card sets and details. </p>
+                <p>- Conduct usability testing and gather feedback to further improve the interface and user experience. </p>
+            </div>
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
+            </div>
+            <a href="https://www.figma.com/design/DwIRc6bR2buzVw2pR4WHv8/Untitled?node-id=18-2&t=vzHnA1B7cVRWQRGQ-1" class="further-btn" target="_blank">To Design</a>
+        </div>
+    </div>
+    <div class="sectionParent">
+        <div class="anchor" id="stylescapes-rockcity"></div>
+        <div class="section">
+            <div class="further-detail">
+                <h2>Stylescapes RockCity</h2>
+                <div class="underline"></div>
+                <p>I had to create a stylescape for our project of rebranding Eindhoven Rockcity. this was one our first designing tasks so I was quite new to the tools used in this task.</p>
+                <p>Nevertheless I came up with a design using elements related to rock music and the colours used by the brand, this was rather difficult since they only really had yellow and black.</p>
+                <p>- Initial Stylescape: This was my first creation, using shades of yellow to have some differences and a rock themed font.</p>
+                <p>- Iteration 1:  After some feedback from my peers I learned that they weren't a fan of the brown/gold so i go rid of it and i showed hexcodes of the used colours, I also ended up swapping a couple things around.</p>
+            </div>
+            <div class="carousel-container" id="carousel4">
+                <h3>Project Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/StyleScape (1).png" alt="Step 1" class="preview-image" data-full="../../images/StyleScape (1).png">
+                            </div>
+                            <p class="carousel-text">Step #1: Initial Stylescape Creation</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/Stylescape 10.png" alt="Step 2" class="preview-image" data-full="../../images/Stylescape 10.png">
+                            </div>
+                            <p class="carousel-text">Step #2: Iteration 1</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel4')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel4')">&#10095;</button>
+                </div>
+            </div>
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
+            </div>
+            <a href="https://www.figma.com/design/DwIRc6bR2buzVw2pR4WHv8/Untitled?node-id=18-2&t=vzHnA1B7cVRWQRGQ-1" class="further-btn" target="_blank">To Design</a>
+        </div>
+    </div>
     <section id="contact" class="footer">
         <div class="logoFooter">
             <img src="./../../images/LogoWhite.svg" alt="Logo">
@@ -152,5 +335,6 @@
         </div>
     </section>
     <script src="../../components/carousel/carousel.js"></script>
+    <script src="../../components/subheader/subheader.js"></script>
 </body>
 </html>

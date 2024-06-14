@@ -30,7 +30,7 @@
 .section .further-detail p {
     font-size: 16px;
     color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-left: 5rem;
     margin-right: 3rem;
     line-height: 1.6; /* Added line-height for better readability */
