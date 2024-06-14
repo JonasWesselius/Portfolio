@@ -6,7 +6,7 @@
 .about-me-container {
     display: flex;
     align-items: center;
-    max-width: 1300px;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -16,13 +16,16 @@
 }
 
 .about-me-picture {
+    margin-top: 5rem;
     width: 100%;
     margin-bottom: 0;
+    border-radius: 2rem;
 }
 
 .about-me-right {
     flex: 2;
     padding-left: 20px;
+    
 }
 
 .about-me h2 {
