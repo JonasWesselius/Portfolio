@@ -1,0 +1,57 @@
+.sectionParent {
+    padding: 20px; /* Added padding around the section parent */
+}
+
+.section {
+    margin-bottom: 40px; /* Added margin below the section */
+    flex-direction: column;
+}
+
+.section .further-detail {
+    text-align: left;
+    padding: 20px; /* Added padding inside the further-detail */
+    background-color: var(--background-color); /* Adjust this to your preferred background color */
+    border-radius: 8px; /* Added border-radius for better visual appearance */
+}
+
+.section .further-detail h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section .further-detail .underline {
+    width: 20rem;
+    height: 3px;
+    background-color: var(--purple);
+    margin: 0 auto 20px;
+}
+
+.section .further-detail p {
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 20px;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    line-height: 1.6; /* Added line-height for better readability */
+}
+
+.further-btn {
+    font-weight: 550;
+    color: var(--white);
+    padding: 12px 35px; 
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto; 
+    text-decoration: none;
+    background: linear-gradient(to top right, var(--purple), var(--darker-purple));
+    border: none;
+}
+
+.further-btn:hover {
+    background: linear-gradient(to top right, var(--purple), var(--darker-purple));;
+    box-shadow: 0 0 5px #8C33D1,
+                0 0 25px #8C33D1,
+                0 0 50px #8C33D1,
+                0 0 200px #8C33D1;
+}
