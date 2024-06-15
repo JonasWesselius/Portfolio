@@ -124,3 +124,8 @@ body {
     max-width: 70%;
     margin-right: 20px;
 }
+.video-container{
+    text-align: center;
+    margin-top: 2rem;
+max-width: 20%;
+}
