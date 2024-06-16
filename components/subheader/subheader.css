@@ -3,7 +3,7 @@
     top: 70px; /* Adjust based on the height of your main header */
     background-color: var(--darkest-gray); /* Example background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    z-index: 99;
 }
 
 .section-navigation nav {
@@ -24,7 +24,7 @@
 
 .section-navigation nav ul li a {
     text-decoration: none;
-    color: var(--purple); /* Example link color */
+    color: var(--contrast-purple); /* Example link color */
     font-size: 18px; /* Example font size */
     font-weight: bold;
 }

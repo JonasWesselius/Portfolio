@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="frontEnd.css">
+    <link rel="stylesheet" href="../further.css">
     <link rel="stylesheet" href="../../colors.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../header.css">
     <link rel="stylesheet" href="../../components/footer/footer.css">
+    <link rel="stylesheet" href="../../components/carousel/carousel.css">
+    <link rel="stylesheet" href="../../components/subheader/subheader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Iterative Design</title>
+    <title>Front-end Development in detail</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon.ico">
 </head>
 <body>
@@ -27,36 +30,212 @@
                 <ul>
                     <li><a href="../../about.html">About</a></li>
                     <li><a href="../../LearningOutcomes.html">Learning Outcomes</a></li>
-                    <li><a href="../../portfolio.html" class="portfolio-btn">Portfolio</a></li>
+                    <li><a href="/pdfs/CV van Jonas Wesselius 2021.pdf" class="portfolio-btn" target="_blank">My CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+    <header class="section-navigation">
+        <nav>
+            <ul>
+                <li><a href="#wireframes-lighttown">Website Lighttown</a></li>
+                <li><a href="#information-architecture">Portfolio</a></li>
+                <li><a href="#wireframes-portfolio">Pokemon Archive</a></li>
+                <li><a href="#wireframes-portfolio">Github</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="title-section">
         <img src="../../images/Logo Zwart.svg" alt="Watermark" class="watermarkLO">
-        <h1>Front End Development</h1>
+        <h1>Front-end Development in detail</h1>
         <div class="underline"></div>
-        <p>This section provides an overview of the iterative design process, showcasing the development and refinement of concepts through various stages.</p>
+        <p>This is where you will find everything I’ve done for the learning outcome front-end development this semester, in greater detail.</p>
     </div>
     <div class="sectionParent">
+        <div class="anchor" id="wireframes-lighttown"></div>
         <div class="section">
-            <div class="text-content">
-                <h2>Wireframes Lighttown</h2>
+            <div class="further-detail">
+                <h2>Website Lighttown</h2>
                 <div class="underline"></div>
-                <p>These wireframes represent the initial design phase for Lighttown, laying out the basic structure and flow of the user interface.</p>
-                <a href="path/to/portfolio" class="portfolio-btn">Read more</a>
+                <p>In class, we learned about Affinity Mapping, a method for organizing research on a specific topic. Initially, we had a group assignment where the entire class analyzed the popular website "bol.com." Each student wrote down tips and tops for the website, which we then combined onto a whiteboard to create our first affinity map. This exercise helped us understand the website's strengths and weaknesses from various perspectives.</p>
+                <p> Later, we split into our project groups and repeated the process for different websites. This allowed us to apply the Affinity Mapping technique in smaller teams, fostering collaboration and deeper insights into each website's user experience and design elements.</p>
             </div>
-            <img src="./../../images/wireframes Lighttown.png" alt="Wireframes Lighttown" class="lighttownImg">
+            <div class="carousel-container" id="carousel1">
+                <h3>Research Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/20240328_143011.jpg" alt="Step 1" class="preview-image" data-full="../../images/20240328_143011.jpg">
+                               
+                            </div>
+                            <p class="carousel-text">Pre-Sorting</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/20240328_145742.jpg" alt="Step 1" class="preview-image" data-full="../../images/20240328_145742.jpg">
+                            </div>
+                            <p class="carousel-text">Post-Sorting</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel1')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel1')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
+            </div>
+            <a href="https://github.com/JonasWesselius/Lighttown" class="further-btn" target="_blank">Go To Repo</a>
         </div>
-
-        <div class="section reverse-section">
-            <img src="./../../images/wireframes Portfolio.png" alt="Another Image" class="altImg">
-            <div class="text-content">
-                <h2>Wireframes Portfolio</h2>
+    </div>
+    <div class="sectionParent">
+        <div class="anchor" id="information-architecture"></div>
+        <div class="section">
+            <div class="further-detail">
+                <h2>Portfolio</h2>
                 <div class="underline"></div>
-                <p>This section showcases the final design, highlighting the changes and improvements made throughout the iterative process.</p>
-                <a href="path/to/portfolio" class="portfolio-btn">Read more</a>
+                <p>In class, we explored Information Architecture, focusing on how to organize and structure content on websites. As part of the learning process, we examined the navigation bars of multiple websites. Each group wrote down the links from these navbars and categorized them based on the sections they believed the links belonged to.</p>
+                <p>This exercise was designed to help us understand how different websites structure their information and how users perceive and navigate through various sections. By comparing and discussing our categorizations, we gained insights into effective information organization and user-friendly design practices. This hands-on approach reinforced the importance of clear and intuitive navigation in enhancing user experience.</p>
+            </div>
+            <div class="carousel-container" id="carousel2">
+                <h3>Research Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240410-WA0011.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240410-WA0011.jpg">
+                            </div>
+                            <p class="carousel-text">1st Result</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240410-WA0008.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240410-WA0008.jpg">
+                                <img src="../../images/IMG-20240410-WA0009.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240410-WA0009.jpg">
+                            </div>
+                            <p class="carousel-text">2nd Result</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel2')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel2')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
+            </div>
+            <a href="https://github.com/JonasWesselius/Portfolio" class="further-btn" target="_blank">Go To Repo</a>
+        </div>
+    </div>
+    
+    <div class="sectionParent">
+        <div class="anchor" id="wireframes-portfolio"></div>
+        <div class="section">
+            <div class="further-detail">
+                <h2>Pokemon Archive</h2>
+                <div class="underline"></div>
+                    <p>As part of our project, our group had the opportunity to put our knowledge of Affinity Mapping into practice with our client, Lighttown Speakers. We visited the club and engaged directly with its members to gather their insights and feedback.</p>    
+                    <p>We asked members to provide their thoughts on various aspects of the club's website, writing down their tips and tops on sticky notes. We then collaboratively organized these notes on a board to create an affinity map, categorizing the feedback into common themes and areas for improvement.</p>
+                    <p>This practical application of Affinity Mapping provided valuable insights into the user experience from the perspective of actual users. We discovered key areas that needed enhancement, such as improving ease of use, creating a separate website for clarity, and making the website more visually appealing. This direct feedback was instrumental in guiding our design decisions and ensuring that the final product met the needs and expectations of the Lighttown Speakers members.</p>
+            </div>
+            <div class="carousel-container" id="carousel3">
+                <h3>Project Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0029.jpg" alt="Step 1" class="preview-image" data-full="../../images/IMG-20240411-WA0029.jpg">
+                                <img src="../../images/IMG-20240411-WA0030.jpg" alt="Step 1" class="preview-image" data-full="../../images/IMG-20240411-WA0030.jpg">
+                            </div>
+                            <p class="carousel-text">Start</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0067.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0067.jpg">
+                                <img src="../../images/IMG-20240411-WA0032.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0032.jpg">
+                            </div>
+                            <p class="carousel-text">Midway</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0033.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0033.jpg">
+                                <img src="../../images/IMG-20240411-WA0036.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0036.jpg">
+                            </div>
+                            <p class="carousel-text">Result</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0050.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0050.jpg">
+                                <img src="../../images/IMG-20240411-WA0052.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0052.jpg">
+                            </div>
+                            <p class="carousel-text">Tips & Tops</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel3')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel3')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
+            </div>
+            <a href="https://github.com/JonasWesselius/PokemonArchive" class="further-btn" target="_blank">Go To Repo</a>        <!-- Video container -->
+        </div>
+    </div>
+    <div class="sectionParent">
+        <div class="anchor" id="wireframes-sprintx"></div>
+        <div class="section">
+            <div class="further-detail">
+                <h2>Github</h2>
+                <div class="underline"></div>
+                <p>I made a detailed analysis of AI translation tools that can help Eindhoven RockCity bridge language barriers and reach a broader audience. The document outlines various AI tools such as Google Translate, Microsoft Translator, DeepL, IBM Watson Language Translator, Yandex.Translate, and Lingvanex, evaluating their accuracy in translating Dutch to English and highlighting their key features. </p>
+                <p>This research taught me the importance of using advanced technology to improve communication and usability in an international environment. By understanding the capabilities and limitations of each tool, I learned how to choose the right solution for specific translation needs. The project also underscored the necessity of reviewing and editing translated content to ensure accuracy and cultural sensitivity. </p>
+                <p>I undertook this research to help Eindhoven RockCity effectively engage with the diverse population of Eindhoven, demonstrating how AI can enhance outreach efforts. By providing this comprehensive guide, I aim to showcase my ability to apply technical knowledge to real-world problems and contribute to the success of local organizations. </p>
+            </div>
+            <div class="carousel-container" id="carousel4">
+                <h3>Project Steps</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0029.jpg" alt="Step 1" class="preview-image" data-full="../../images/IMG-20240411-WA0029.jpg">
+                                <img src="../../images/IMG-20240411-WA0030.jpg" alt="Step 1" class="preview-image" data-full="../../images/IMG-20240411-WA0030.jpg">
+                            </div>
+                            <p class="carousel-text">Start</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0067.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0067.jpg">
+                                <img src="../../images/IMG-20240411-WA0032.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0032.jpg">
+                            </div>
+                            <p class="carousel-text">Midway</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0033.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0033.jpg">
+                                <img src="../../images/IMG-20240411-WA0036.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0036.jpg">
+                            </div>
+                            <p class="carousel-text">Result</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="../../images/IMG-20240411-WA0050.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0050.jpg">
+                                <img src="../../images/IMG-20240411-WA0052.jpg" alt="Step 2" class="preview-image" data-full="../../images/IMG-20240411-WA0052.jpg">
+                            </div>
+                            <p class="carousel-text">Tips & Tops</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide('carousel4')">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide('carousel4')">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Lightbox container -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Full Size">
             </div>
         </div>
     </div>
@@ -81,5 +260,7 @@
             <div class="icon"><img src="./../../images/DiscordIcon.svg" alt="Discord"></div>
         </div>
     </section>
+    <script src="../../components/carousel/carousel.js"></script>
+    <script src="../../components/subheader/subheader.js"></script>
 </body>
 </html>

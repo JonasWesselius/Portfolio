@@ -26,8 +26,8 @@ body {
     margin-bottom: 10px;
 }
 
-.title-section .underlines {
-    width: 28rem;
+.title-section .underline {
+    width: 20rem;
     height: 3px;
     background-color: var(--purple);
     margin: 0 auto 20px;
@@ -53,6 +53,7 @@ body {
     width: 60%;
     background-color: var(--section-gray);
     margin-bottom: 20px;
+    padding-bottom: 2rem;
     border-radius: 2rem;
     position: relative;
 }
@@ -123,4 +124,16 @@ body {
     order: 1;
     max-width: 70%;
     margin-right: 20px;
+}
+.video-container{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0px 20px 10px 20px;
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 20%;
+}
+.video-container h3{
+    margin: 1rem;
 }
