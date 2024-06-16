@@ -47,5 +47,5 @@
 .hexagonLO:hover .hover-text {
     opacity: 1; 
     font-size: 26px; 
-    color: var(--purple); 
+    color: var(--contrast-purple); 
 }
