@@ -1,6 +1,6 @@
 
 html {
-    scroll-behavior: smooth; /* Enables smooth scrolling for the whole document */
+    scroll-behavior: smooth; 
 }
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -132,8 +132,14 @@ section h2 {
     border-radius: 10px; 
     transform: translateX(-50%); 
 }
-
-
+.project-img{
+    width: 20rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; 
+}
 .watermark {
     max-width: 45%;
     position: absolute; 

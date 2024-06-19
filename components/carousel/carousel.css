@@ -40,21 +40,21 @@
     align-items: center;
     min-width: 100%;
     box-sizing: border-box;
-    opacity: 1; /* Default opacity */
-    visibility: visible; /* Default visibility */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transitions */
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
 
 .carousel-item:not(.active) {
-    opacity: 0; /* Hide inactive carousel items */
-    visibility: hidden; /* Hide inactive carousel items */
-    pointer-events: none; /* Disable interactions on hidden items */
+    opacity: 0;
+    visibility: hidden; 
+    pointer-events: none; 
 }
 
 .carousel-item img {
-    max-width: 45%; /* Adjust width of images */
-    max-height: 50vh; /* Adjust height of images */
-    margin: 0 5px; /* Adjust margin between images */
+    max-width: 45%;
+    max-height: 50vh; 
+    margin: 0 5px; 
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;

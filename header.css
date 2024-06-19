@@ -47,7 +47,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-left: 20px; 
-    position: relative; /* Make the position relative to allow absolute positioning of pseudo-element */
+    position: relative; 
 }
 
 nav ul li a {
@@ -58,11 +58,11 @@ nav ul li a {
 }
 
 nav ul li.current-page a::after {
-    content: ""; /* Create the pseudo-element */
+    content: ""; 
     position: absolute;
     bottom: 20px; 
-    left: 50%; /* Position the pseudo-element at the center */
-    transform: translateX(-50%); /* Center the pseudo-element horizontally */
+    left: 50%; 
+    transform: translateX(-50%); 
     width: 110%;
     height: 2px; 
     background-color: var(--purple); 
@@ -99,9 +99,9 @@ nav ul li.current-page a::after {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 160px;
-    opacity: 0; /* Start with opacity 0 */
-    transition: opacity 0.3s ease; /* Smooth opacity transition */
-    pointer-events: none; /* Disable pointer events when hidden */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    pointer-events: none; 
 }
 
 .dropdown-content a {
@@ -116,9 +116,8 @@ nav ul li.current-page a::after {
     background-color: var(--darkest-gray);
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    opacity: 1; /* Fade in the dropdown */
-    pointer-events: auto; /* Enable pointer events when shown */
+    opacity: 1; 
+    pointer-events: auto; 
 }

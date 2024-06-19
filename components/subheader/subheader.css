@@ -1,7 +1,7 @@
 .section-navigation {
     position: sticky;
-    top: 70px; /* Adjust based on the height of your main header */
-    background-color: var(--darkest-gray); /* Example background color */
+    top: 70px; 
+    background-color: var(--darkest-gray); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 99;
 }
@@ -24,13 +24,13 @@
 
 .section-navigation nav ul li a {
     text-decoration: none;
-    color: var(--contrast-purple); /* Example link color */
-    font-size: 18px; /* Example font size */
+    color: var(--contrast-purple); 
+    font-size: 18px; 
     font-weight: bold;
 }
 .anchor{
     display: block;
     position: relative;
-    top: -130px; /* Adjust based on the padding-top of .sectionParent */
+    top: -130px; 
     visibility: hidden;
 }
